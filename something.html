@@ -55,7 +55,33 @@
       <div class="section-left">
       <img class="resp-img website" src="src/images/cat.jpg" alt="Cat">
       </div>
-      
+
+      <style>
+  .resp-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .section-right {
+    float: right;
+    width: 45%; /* Adjust as needed */
+    margin-left: 20px;
+  }
+
+  .section-left {
+    float: left;
+    width: 45%; /* Adjust as needed */
+    margin-right: 20px;
+  }
+
+  /* Clear floats */
+  .section-right::after, .section-left::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    </style>
       
     </section>
 
