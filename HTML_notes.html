@@ -32,12 +32,13 @@
   <a href="https://qqs377.github.io/PersonalWeb/something.html">
   clickable text  
   </a> to link pages together.
-
+</p>
+  
 </div>
 
 <div> 
-  <h1> Structure of Lists as Text Content
-  <h3> bullet points
+  <h1> Structure of Lists as Text Content </h1>
+  <h3> bullet points </h3>
 <ul>
   <li> this will appear as bullet point 1 </li> 
   <li> bullet point 2 </li>
@@ -48,6 +49,7 @@
   <li> bullet point 3 </li>
 </ul>
 This is the end
+
     <!-- <ul> must have <li> inside  --> 
     
   <h3> Ordered list </h3>
@@ -86,7 +88,93 @@ This is the end
   </tr>
 </table>
 
-    
+</div>
+
+<div>
+  <h1> Creating an HTML Button </h1>
+  <input type = "button" value = "Click me"
+    onclick = "alert('nothing happened')">
+
+  <!-- value: name of the button -->
+  <!-- onclick: triggers event handler on click -->
+  <!-- instead alert inside onclick, can also call function -->
+  
+  <input type = "button" value = "Don't click me"
+    onclick = "dochange()">
+  
+  <script>
+    function dochange() {
+        alert('I told you');
+    }
+  </script>
+  
+  <!-- Choice: allow user to make a choice -->
+  
+  <input type = "button" value = "Make a Choice"
+    onclick = "getUserChoice()">
+  <script>
+    function getUserChoice() {
+              let choice = confirm("Do you want to proceed?");
+              if (choice == true) {
+                  <!-- Does the Same: if (choice) { -->
+                  alert("You clicked OK!");
+              } else {
+                  alert("You clicked Cancel!");
+              }
+          }
+  </script>
+</div>
+
+<div>
+  <h1> Use CSS to Style HTML </h1>
+
+  <p style="color: blue; font-size: 18px;">This is a blue paragraph.</p>
+  
+<head>
+    <style>
+        p {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>This paragraph is red.</p>
+</body>
+
+
+  <style>
+    div {
+      width: 240pt;
+      padding: 5pt;
+      margin: 10pt;
+      border: 1px solid lightgray;
+      font-size: 16pt;
+    }
+    #div1{
+      background-color: lightsteelblue;
+    }
+    #div2{
+      background-color: LightCoral;
+    }
+ <!-- color names:   https://www.w3schools.com/colors/colors_names.asp -->
+  </style>
+
+  <div id="div1">
+    Example 1
+  </div>
+
+  <div id="div2">
+    Example 2
+  </div>
+  
+
+  <!-- or you can link it to CSS style sheet -->
+  <!-- test out HTML and CSS here: http://codepen.io/ -->
+
+  
+</div>
+  
 
 
 
