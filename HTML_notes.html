@@ -179,7 +179,72 @@ This is the end
   <h1> Change Color When Click on a Button </h1>
   
 </div>
+
+
+
+<script>
+  function changecolor(){
+    var dd1 = document.getElementById("d1");
+    
+    dd1.className = "redback";
+    
+  }
+
+  function changetext(){
+    var dd2 = document.getElementById("d2");
+    
+    dd2.innerHTML = "我改变语言";
+  }
   
+</script>
+
+<style>
+  .redback{
+  background-color: LightCoral;
+  }
+</style>
+
+<!-- change button style -->  
+  
+<button class="my-button">Click Me</button>
+
+<style>
+  .my-button {
+    background-color: #3498db; /* Blue color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Space inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Hand cursor on hover */
+  }
+
+  /* Hover effect */
+  .my-button:hover {
+    background-color: #2980b9; /* Darker blue */
+  }
+
+</style>
+
+  
+<div id="d1">
+  I change color
+</div>
+
+<div id="d2">
+  I change language
+</div>
+  
+<div>
+  <p>
+    <input type = "button" value = "color change" class="my-button"
+      onclick = "changecolor()">
+  </p>
+  <p>
+    <input type = "button" value = "text change" class="my-button"
+      onclick = "changetext()">
+  </p>
+</div>
 
 
 
