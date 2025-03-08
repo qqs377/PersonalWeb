@@ -41,7 +41,7 @@
   <h3> bullet points </h3>
 <ul>
   <li> this will appear as bullet point 1 </li> 
-  <li> bullet point 2 </li>
+  <li> bullet point 2  </li>
     <ul>
       <li> you can add nested lists 1 within the bullet 2</li>
       <li> bullet within bullets</li>
@@ -50,6 +50,7 @@
 </ul>
 This is the end
 
+    <!-- <ul> (unordered list) must be inside <li>, <ul> cannot be a direct child of <ol>. It should be inside a <li>.  --> 
     <!-- <ul> must have <li> inside  --> 
     
   <h3> Ordered list </h3>
@@ -58,6 +59,20 @@ This is the end
   <li> list #2 </li>
   <li> list #3 </li>
 </ol>
+
+Combined
+
+  <ol>
+        <li class="oddNums">New York
+            <ul>
+                <li>Empire State Building</li>
+                <li>Statue of Liberty</li>
+                <li>Times Square</li>
+            </ul>
+        </li>
+        <li>Los Angeles</li>
+        <li class="oddNums">Chicago</li>
+ </ol>
 
 <!-- can make lists of lists, or lists of images  --> 
 
